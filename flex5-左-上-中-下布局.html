@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex上中下上固定布局</title>
+    <style>
+        body{
+            height:100vh;
+            display: flex;
+        }
+        aside{
+            width:20%;
+            flex:none;
+            overflow-y: auto;
+            background-color: aqua;
+        }
+        .content{
+            display: flex;
+            flex:auto;
+            flex-direction: column;
+        }
+         .content   article{
+            flex:auto;
+            background-color: aquamarine;
+        }
+
+        footer{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <p>item</p>
+        <p>item</p>
+        <p>item</p>
+        <p>item</p>
+        <p>item</p>
+    </aside>
+    <div class="content">
+        <header>header</header>
+        <article>article</article>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

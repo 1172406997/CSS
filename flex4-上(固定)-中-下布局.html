@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex上中下上固定布局</title>
+    <style>
+        body{
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            padding-top:60px;
+        }
+        header{
+            height:60px;
+            position:fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            background-color: azure;
+        }
+         article{
+            flex:auto;
+            background-color: aquamarine;
+        }
+
+        footer{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+   <header>header</header>
+   <article>article</article>
+   <footer>footer</footer>
+</body>
+</html>

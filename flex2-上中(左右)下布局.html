@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex上中下布局</title>
+    <style>
+        body{
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .content{
+            flex:auto;
+            display: flex;
+            background-color: aqua;
+        }
+        .content aside{
+            width:20%;/*左侧定宽布局*/
+        }
+        .content article{
+            flex:auto;
+            background-color: aquamarine;
+        }
+        header{
+            background-color: azure;
+        }
+        footer{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <div class="content">
+        <aside>aside</aside>
+        <article>article</article>
+    </div>
+    <footer>footer</footer>
+</body>
+</html>
